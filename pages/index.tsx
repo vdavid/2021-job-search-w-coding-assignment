@@ -21,7 +21,7 @@ const Home: NextPage<HomePageProps> = ({problem1Input}: HomePageProps) => {
       <p className={styles.description}>
         This is a solution for a take-home assignment in my 2021 job search.
       </p>
-      <Problem1 input={problem1Input} />
+      <Problem1 inputString={problem1Input} />
     </div>
   )
 }
