@@ -25,3 +25,29 @@ test('Problem1Solver can solve the sample two-sum problem', async () => {
     expect(output![0]).toBe(expectedResult[0]);
     expect(output![1]).toBe(expectedResult[1]);
 });
+
+test('Problem1Solver can solve a trivial three-sum problem', async () => {
+    /* Assemble */
+    const input = [1, 2, 3];
+
+    /* Act */
+    const output = Problem1Solver.solveThreeSum(input, 6);
+
+    /* Assert */
+    expect(output![0] * output![1] * output![2]).toBe(6);
+});
+
+test('Problem1Solver can solve the sample three-sum problem', async () => {
+    /* Assemble */
+    const input = [1721, 979, 366, 299, 675, 1456];
+    const expectedResult = [366, 675, 979];
+
+    /* Act */
+    const output = Problem1Solver.solveThreeSum(input, 2020);
+
+    /* Assert */
+    expect(output).not.toBe(undefined);
+    expect(output![0]).toBe(expectedResult[0]);
+    expect(output![1]).toBe(expectedResult[1]);
+    expect(output![2]).toBe(expectedResult[2]);
+});
