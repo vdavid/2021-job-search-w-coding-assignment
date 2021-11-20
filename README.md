@@ -2,9 +2,16 @@
 
 This is a project I created as part of a job interviewing process.
 
+# Running
+- Run the app for development with `npm run dev`, then see it at http://localhost:3000
+
+## Project description
+
+### Problem
+
 I was expected to:
 
-- Develop it as if I was shipping it to production
+- Develop my solution for at least one of 2 problems, as if I was shipping it to production
 - Use any language
 - Attach tests
 - Add docs to facilitate understanding and running
@@ -15,9 +22,10 @@ I was expected to:
 - Can submit both assignments
 - Send the results back in an archive
 
-# Running
-- Run the app for development with `npm run dev`, then see it at http://localhost:3000
+### Solution
+
+- I chose TypeScript, plus Next.js to bootstrap the app. It's quick and pretty standard this way, plus it can be deployed to the web via Netlify or Vercel. Clicking a link seems more convenient for the reviewer than running it from a CLI.
 
 # Tech details
- - I've bootstrapped my app with `npx create-next-app@latest --ts` because it's quick and pretty standard, plus it sets up the project in a way that it can be deployed to the web via Netlify or Vercel. Just clicking a link is probably slightly more convenient for the reviewer than running it from a CLI.
+ - I've bootstrapped my app with `npx create-next-app@latest --ts` 
  
