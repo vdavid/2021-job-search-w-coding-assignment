@@ -4,7 +4,7 @@ This is a project I created as part of a job interviewing process.
 
 # How to quickly run:
 
-- It's deployed to [https://quirky-bose-33f26c.netlify.app/](https://quirky-bose-33f26c.netlify.app/), you can conveniently run it there.
+- It's deployed to [https://2021-job-search-w-coding-assignment-7zvmjhrgg.vercel.app/](https://2021-job-search-w-coding-assignment-7zvmjhrgg.vercel.app/), you can conveniently run it there.
 
 # How to test or develop
 
@@ -12,6 +12,7 @@ This is a project I created as part of a job interviewing process.
 - Run `npm install` in the app folder
 - Run the app for development with `npm run dev`, then see it at http://localhost:3000
 - Run tests by `npm run tests`
+- As for the source code, you're probably interested in the algorithms in **/services/Problem1Solver.ts**.
 
 ## Project description
 
@@ -34,7 +35,7 @@ I was expected to:
 
 - I chose the first problem
 - For the language, I chose TypeScript.
-- I added Next.js for the convenience of the reviewer so that I can deploy it via Netlify. Clicking a link seems more convenient for the reviewer to see the output than checking out the app from the repo, doing an `npm install`, and running it from a CLI.
+- I added Next.js for the convenience of the reviewer so that I can deploy it via Vercel. Clicking a link seems more convenient for the reviewer to see the output than checking out the app from the repo, doing an `npm install`, and running it from a CLI.
 
 # Tech details
  - I've bootstrapped my app with `npx create-next-app@latest --ts` 
