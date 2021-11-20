@@ -1,8 +1,14 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import type {NextPage} from 'next';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Problem1 from './components/Problem1';
+import {promises as fs} from 'fs';
 
-const Home: NextPage = () => {
+type HomePageProps = {
+  readonly problem1Input: string;
+};
+
+const Home: NextPage<HomePageProps> = ({problem1Input}: HomePageProps) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,11 +21,20 @@ const Home: NextPage = () => {
       <p className={styles.description}>
         This is a solution for a take-home assignment in my 2021 job search.
       </p>
-      <section>
-        <h1>Assignment #1</h1>
-      </section>
+      <Problem1 input={problem1Input} />
     </div>
   )
 }
 
+export async function getStaticProps() {
+    /* Load input from files */
+    const problem1Input = await fs.readFile('input/input1.txt');
+
+    /* Assemble props from input */
+    return {
+        props: {
+            problem1Input: problem1Input.toString(),
+        }
+    };
+}
 export default Home
