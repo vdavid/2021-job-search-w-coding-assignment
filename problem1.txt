@@ -12,10 +12,10 @@ e.g. For the list below, the two numbers are 1721 and 299. Multiplying them toge
 675
 1456
 
-Answer:
+Answer: 1013211
 
 1.b
 
 Now find the three numbers in the input set that sum to 2020. Using the example above again, the three numbers that sum to 2020 are 979, 366, and 675. Multiplying them together produces the answer, 241861950.
 
-Answer:
+Answer: 13891280
