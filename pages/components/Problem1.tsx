@@ -3,18 +3,26 @@ import {useEffect, useState} from 'react';
 import Problem1Solver from '../services/Problem1Solver';
 
 export default function Problem1({inputString}: {inputString: string}) {
-    const [output, setOutput] = useState<string>();
+    const target = 2020;
+    const [outputA, setOutputA] = useState<string>();
+    const [outputB, setOutputB] = useState<string>();
     useEffect(() => {
         let parsedInput = inputString.split('\n').map(line => parseInt(line));
-        setOutput(Problem1Solver.solve(parsedInput, 2020 /* TODO: Make this dynamic in the future */).toString());
+        const resultA = Problem1Solver.solveTwoSum(parsedInput, target);
+        const resultB = Problem1Solver.solveThreeSum(parsedInput, target);
+        setOutputA(resultA ? `${resultA.reduce((result, number) => result * number, 1)} (${resultA[0]} * ${resultA[1]})` : 'No solution found');
+        setOutputB(resultB ? `${resultB.reduce((result, number) => result * number, 1)} (${resultB[0]} * ${resultB[1]} * ${resultB[2]})` : 'No solution found');
     }, [inputString]);
     return <section className={styles.problem}>
         <h1>Problem #1</h1>
-        <p>The problem:</p>
-        <p>1.a: From the input provided in the file input1.txt, find the two numbers that sum to 2020 and provide the result of multiplying them together.</p>
-        <label htmlFor="problem1Input">Input:</label>
-        <textarea id="problem1Input" value={inputString} readOnly={true} />
-        <label htmlFor="problem1Output">Output:</label>
-        <textarea id="problem1Output" value={output} readOnly={true} />
+        <p><strong>Input numbers:</strong> {inputString.trim().replaceAll('\n', ', ')}</p>
+        <p><strong>Target:</strong> {target}</p>
+
+        <h2>1.a</h2>
+        <p><strong>Problem:</strong> From the input provided in the file input1.txt, find the two numbers that sum to 2020 and provide the result of multiplying them together.</p>
+        <p><strong>Output:</strong> {outputA} (calculated here on the front end)</p>
+        <h2>1.b</h2>
+        <p><strong>Problem:</strong> Now find the three numbers in the input set that sum to 2020.</p>
+        <p><strong>Output:</strong> {outputB} (calculated here on the front end)</p>
     </section>;
 }
