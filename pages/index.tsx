@@ -1,7 +1,7 @@
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Problem1 from './components/Problem1';
+import Problem1 from '../components/Problem1';
 import {promises as fs} from 'fs';
 
 type HomePageProps = {
