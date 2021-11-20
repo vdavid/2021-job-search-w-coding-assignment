@@ -2,8 +2,16 @@
 
 This is a project I created as part of a job interviewing process.
 
-# Running
+# How to quickly run:
+
+- It's deployed to [https://quirky-bose-33f26c.netlify.app/](https://quirky-bose-33f26c.netlify.app/), you can conveniently run it there.
+
+# How to test or develop
+
+- Check out the source code from the [repo](https://github.com/vdavid/2021-job-search-w-coding-assignment)
+- Run `npm install` in the app folder
 - Run the app for development with `npm run dev`, then see it at http://localhost:3000
+- Run tests by `npm run tests`
 
 ## Project description
 
@@ -24,7 +32,9 @@ I was expected to:
 
 ### Solution
 
-- I chose TypeScript, plus Next.js to bootstrap the app. It's quick and pretty standard this way, plus it can be deployed to the web via Netlify or Vercel. Clicking a link seems more convenient for the reviewer than running it from a CLI.
+- I chose the first problem
+- For the language, I chose TypeScript.
+- I added Next.js for the convenience of the reviewer so that I can deploy it via Netlify. Clicking a link seems more convenient for the reviewer to see the output than checking out the app from the repo, doing an `npm install`, and running it from a CLI.
 
 # Tech details
  - I've bootstrapped my app with `npx create-next-app@latest --ts` 
