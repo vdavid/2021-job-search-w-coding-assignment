@@ -20,9 +20,9 @@ export default function Problem1({inputString}: {inputString: string}) {
 
         <h2>1.a</h2>
         <p><strong>Problem:</strong> From the input provided in the file input1.txt, find the two numbers that sum to 2020 and provide the result of multiplying them together.</p>
-        <p><strong>Output:</strong> {outputA} (calculated here on the front end in <code>O(n)</code> time.)</p>
+        <p><strong>Output:</strong> {outputA} – calculated here on the front end in <code>O(n)</code> time.</p>
         <h2>1.b</h2>
         <p><strong>Problem:</strong> Now find the three numbers in the input set that sum to 2020.</p>
-        <p><strong>Output:</strong> {outputB} (calculated here on the front end in <code>O(n²)</code> time.)</p>
+        <p><strong>Output:</strong> {outputB} – calculated here on the front end in <code>O(n²)</code> time.</p>
     </section>;
 }
