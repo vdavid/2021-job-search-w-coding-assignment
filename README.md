@@ -15,5 +15,9 @@ I was expected to:
 - Can submit both assignments
 - Send the results back in an archive
 
+# Running
+- Run the app for development with `npm run dev`, then see it at http://localhost:3000
+
 # Tech details
  - I've bootstrapped my app with `npx create-next-app@latest --ts` because it's quick and pretty standard, plus it sets up the project in a way that it can be deployed to the web via Netlify or Vercel. Just clicking a link is probably slightly more convenient for the reviewer than running it from a CLI.
+ 
