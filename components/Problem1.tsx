@@ -15,7 +15,7 @@ export default function Problem1({inputString}: {inputString: string}) {
     }, [inputString]);
     return <section className={styles.problem}>
         <h1>Problem #1</h1>
-        <p><strong>Input numbers:</strong> {inputString.trim().replaceAll('\n', ', ')}</p>
+        <p><strong>Input numbers:</strong> {inputString ? inputString.trim().replaceAll('\n', ', ') : '(No input)'}</p>
         <p><strong>Target:</strong> {target}</p>
 
         <h2>1.a</h2>
